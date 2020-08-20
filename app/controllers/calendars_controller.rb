@@ -35,7 +35,11 @@ class CalendarsController < ApplicationController
         plans.push(plan.plan) if plan.date == @todays_date + x
       end
 <<<<<<< HEAD
+<<<<<<< HEAD
       days = {month: (@todays_date + x).month, date: (@todays_date+x).day, wday: wdays[(@todays_date+x).wday] , plans: plans}
+=======
+      days = {month: (@todays_date + x).month, date: (@todays_date+x).day, plans: plans}
+>>>>>>> parent of 5cce87f... issue6
 =======
       days = {month: (@todays_date + x).month, date: (@todays_date+x).day, plans: plans}
 >>>>>>> parent of 5cce87f... issue6
