@@ -7,10 +7,14 @@
   <% end %>
 
   <div class=calendar>
-    <% @week_days.each do |day| %>
+    <%= @week_days.each do |day| %>
       <div class='item'>
         <div class='date'>
+<<<<<<< HEAD
           <%=day[:month] %>/<%=day[:date] %><%=day[:wday] %>
+=======
+          <% day[:month] %>/<% day[:date] %>
+>>>>>>> parent of acc91d9... issue5修正
         </div>
         <ul class='content'>
         <% if day[:plans].length != 0 %>
